@@ -15,5 +15,5 @@ resource "google_bigquery_dataset" "default" {
   labels {
     env = "default"
   }
- schema = "${file("terraform-bq-schema.json")}"
+ //schema = "${file("terraform-bq-schema.json")}"
 }
