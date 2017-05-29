@@ -1,3 +1,11 @@
+//runnning from sractch... 
+provider "google" {
+ credentials = "${file("../JasonM-ML-Project888-0dec86ec8b3b.json")}"
+ project     = "jasonm-ml-project888" //project must be existing
+ region      = "us-central1"
+}
+
+
 resource "google_bigquery_dataset" "default" {
   dataset_id                  = "test"
   friendly_name               = "test"
