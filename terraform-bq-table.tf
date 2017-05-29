@@ -1,6 +1,6 @@
 // Configure the Google Cloud provider
 provider "google" {
-  credentials = "${file("../JasonM-ML-Project888-0dec86ec8b3b.json")}"
+  credentials = "${file("../JasonM-ML-Project888-0dec86ec8b3b.json1")}"
   project     = "jasonm-ml-project888"
   region      = "us-central1"
 }
