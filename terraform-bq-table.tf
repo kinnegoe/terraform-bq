@@ -20,7 +20,8 @@ resource "google_bigquery_dataset" "default" {
 
 
 resource "google_bigquery_table" "default" {
-  dataset_id = "${google_bigquery_dataset.default.id}"
+  //dataset_id = "${google_bigquery_dataset.default.id}"
+  dataset_id = "test-terraform-bq}"
   table_id   = "test"
 
   time_partitioning {
