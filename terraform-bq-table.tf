@@ -7,9 +7,9 @@ provider "google" {
 
 
 resource "google_bigquery_dataset" "default" {
-  dataset_id                  = "test"
-  friendly_name               = "test"
-  description                 = "This is a test description"
+  dataset_id                  = "testterraformbq" 
+  friendly_name               = "testterraformbq"
+  description                 = "This is a test testterraformbq"
   location                    = "EU"
   default_table_expiration_ms = 3600000
 
@@ -21,7 +21,7 @@ resource "google_bigquery_dataset" "default" {
 
 resource "google_bigquery_table" "default" {
   //dataset_id = "${google_bigquery_dataset.default.id}"
-  dataset_id = "testterraformbq"
+  dataset_id = "testterraformbq" //must be same as above - must exist
   table_id   = "test"
 
   time_partitioning {
