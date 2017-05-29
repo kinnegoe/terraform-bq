@@ -31,5 +31,5 @@ resource "google_bigquery_table" "default" {
     env = "default"
   }
 
-  schema = "${file("bq-schema.json")}"
+  schema = "${file("terraform-bq-schema.json")}"
 }
