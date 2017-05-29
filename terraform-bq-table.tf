@@ -1,7 +1,7 @@
 // Configure the Google Cloud provider
 provider "google" {
   credentials = "${file("../JasonM-ML-Project888-0dec86ec8b3b.json")}"
-  project     = "jasonm-ml-project888-1"
+  project     = "jasonm-ml-project888" //project must be existing
   region      = "us-central1"
 }
 
@@ -21,7 +21,7 @@ resource "google_bigquery_dataset" "default" {
 
 resource "google_bigquery_table" "default" {
   //dataset_id = "${google_bigquery_dataset.default.id}"
-  dataset_id = "test-terraform-bq"
+  dataset_id = "testterraformbq"
   table_id   = "test"
 
   time_partitioning {
